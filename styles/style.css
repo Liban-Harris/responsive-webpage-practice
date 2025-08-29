@@ -12,7 +12,7 @@
 :root {
     --clr-text: #3D3D3D;
     --clr-primary:#05780A;
-    --clr-accent:#764981;
+    --clr-accent:#613B6B;
 
     --ff-title: "KLEE ONE", sans-serif;
     --ff-serif: "Crimson text", serif; 
@@ -26,6 +26,7 @@ html {
 }
 body {
     margin:0;
+    text-align: center;
 }
 
 img {
@@ -49,6 +50,7 @@ h3 {
     font-family: var(--ff-title);
     line-height: 0.9;
     /* font-size: 3rem; */
+    text-transform: capitalize;
 }
 
 h2 {
@@ -59,6 +61,16 @@ p {
     margin-block-end: 1rem;
 }
 
+.section-title-small {
+    font-size: 2.5rem;
+    /* line-height: 0.3; */
+}
+
+.section-title-small  small{
+    display: block;
+    font-size: 0.7em;
+    /* line-height: 0.3; */
+}
 .text-primary {
     color: var(--clr-primary);
 }
@@ -96,6 +108,25 @@ header {
 
 
 /* buttons */
+.btn-group {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:0.5em;
+}
+.btn {
+    padding: 0.75em 2.5em;
+    color:#fff;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 0.5em;
+}
+
+.btn-primary {
+    background-color: var(--clr-primary);
+}
+
 
 /* home page styles */
 
@@ -106,14 +137,42 @@ header {
     background-color: #333;
     background-image: url(../img/granola-bg.jpeg);
     background-blend-mode: multiply;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     background-size: cover; 
-    /* background-position: center center; */
+    background-position: center;
     color: #FFF;
     
 }
 
-.intro {
+/* .intro {
     text-align: center;
+} */
+
+.about-us {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--clr-accent);
+    color:#ffffff;
 }
 
+.about-us__intro {
+    margin: 0;
+    padding: 3em 2em 1.5em;
+    
+    background-image: url("../img/granola-bar-bg.jpg");
+    background-color: var(--clr-accent);
+    background-blend-mode: multiply;
+    background-size: cover;
+
+}
+
+.about-us__body {
+    padding: 3em 1em;
+}
+
+.order-online {
+    background-color: #e5e8ec;
+}
