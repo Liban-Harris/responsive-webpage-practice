@@ -191,3 +191,15 @@ header {
 .product img {
     float:left;
 }
+
+.product__title {
+    margin-bottom: 1em;
+
+    font-size: 1.5rem;
+    color: var(--clr-primary);
+
+}
+
+.fineprint {
+    font-size: 0.75rem;
+}
