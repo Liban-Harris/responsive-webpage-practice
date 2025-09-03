@@ -81,6 +81,15 @@ p {
     justify-content: center;
 }
 
+.logo__text {
+    font-size: 1.5rem;
+    display: inline-block;
+    font-family: "Meddon";
+    text-decoration: none;
+    color: var(--clr-text);
+}
+
+
 
 /* navigaiton */
 nav ul {
