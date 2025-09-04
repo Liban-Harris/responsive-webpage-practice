@@ -12,7 +12,9 @@
 :root {
     --clr-text: #3D3D3D;
     --clr-primary:#05780A;
+    --clr-primary-dark:#094c0c;
     --clr-accent:#613B6B;
+    --clr-accent-dark:#4e2f56;
     --clr-off-white:#f2f4f7;;
 
     --ff-title: "KLEE ONE", sans-serif;
@@ -38,6 +40,15 @@ img {
 section {
     padding-inline: 1em;
     padding-block:2em;
+}
+
+.mt-1em {
+    margin-top: 0.5em;
+
+}
+
+.mb-0 {
+    margin-bottom: 0;
 }
 
 /* Typography */
@@ -90,7 +101,6 @@ p {
 }
 
 
-
 /* navigaiton */
 nav ul {
     display: flex;
@@ -136,6 +146,21 @@ header {
 .btn-primary {
     background-color: var(--clr-primary);
 }
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--clr-primary-dark);
+}
+.btn-accent {
+    background-color: var(--clr-accent);
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+    background-color: var(--clr-accent-dark);
+}
+
+
+
 
 
 /* home page styles */
