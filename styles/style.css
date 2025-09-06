@@ -212,7 +212,9 @@ header {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
     padding: 1rem;
+    margin-bottom: 3rem;
 
     background-color: var(--clr-off-white);
 }
@@ -221,6 +223,10 @@ header {
     padding: 1rem;
     background-color: white;
 }
+
+/* .product:last-of-type {
+    margin-bottom: 3rem;
+} */
 
 .product img {
     float:left;
@@ -237,3 +243,41 @@ header {
 .fineprint {
     font-size: 0.75rem;
 }
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap:1.5rem;
+
+    padding: 3em 1em;
+    margin-top: 3rem;
+
+    background-color: #333;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color:inherit;
+}
+
+.footer-nav,
+.footer-social {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* width:2rem; */
+}
+.social-icon {
+    /* display: block; */
+    width:2rem;
+
+}
+
